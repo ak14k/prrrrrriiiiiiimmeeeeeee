@@ -33,11 +33,11 @@ class script(object):
 • /pin_grp_broadcast - ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇ ᴀs ᴘɪɴ ᴛᴏ ᴀʟʟ ɢʀᴏᴜᴘs.
 • /restart - ᴛᴏ ʀᴇsᴛᴀʀᴛ ʙᴏᴛ.</b>"""   
 
-    ABOUT_TEXT = """<b>‣ ᴍʏ ɴᴀᴍᴇ : <a href="https://t.me/Neon_X_Bot/">Lᴜғғʏ ❟❛❟</a> 
+    ABOUT_TEXT = """<b>‣ ᴍʏ ɴᴀᴍᴇ : <a href="https://t.me/TGFilmsProvider">Hello</a> 
 ‣ ʜᴏsᴛᴇᴅ ᴏɴ : <a href="https://www.heroku.com/">ʜᴇʀᴏᴋᴜ</a>
 ‣ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href="https://www.mongodb.com/">ᴍᴏɴɢᴏ ᴅʙ</a>
 ‣ ʟᴀɴɢᴜᴀɢᴇ : <a href="https://www.python.org/">ᴘʏᴛʜᴏɴ 𝟹</a>
-‣ ʟɪʙʀᴀʀʏ : <a href="https://github.com/Mayuri-Chan/pyrofork">ᴘʏʀᴏғᴏʀᴋ</a></b>"""
+‣ ʟɪʙʀᴀʀʏ : <a href="https://t.me/TGFilmsProvider">ᴘʏʀᴏғᴏʀᴋ</a></b>"""
    
     SUPPORT_GRP_MOVIE_TEXT = '''<b>ʜᴇʏ {}
 
@@ -45,12 +45,7 @@ class script(object):
 ʙᴜᴛ ɪ ᴄᴀɴ'ᴛ sᴇɴᴅ ʜᴇʀᴇ 🤞🏻
 ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴏᴜʀ ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ ᴛᴏ ɢᴇᴛ ✨</b>'''
 
-    OWNER_INFO = """
-<b>⍟───[ <u>ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ</u> ]───⍟
-    
-‣ ꜰᴜʟʟ ɴᴀᴍᴇ : ⏤͟͟͞͞HᴀᴄKᴇʀ Jʀ ᠰ
-‣ ᴜꜱᴇʀɴᴀᴍᴇ : <a href="https://telegram.me/HacKer_Jr">HᴀᴄKᴇʀ Jʀ ᠰ</a>
-‣ ᴄᴏᴜɴᴛʀʏ : ɪɴᴅɪᴀ 🇮🇳</b>"""    
+    OWNER_INFO = """@TGFilmsProvider"""    
 
     EXTRAMOD_TXT = """<b>➜ <u>ᴇxᴛʀᴀ ᴍᴏᴅs ᴄᴏᴍᴍᴀɴᴅs:</u>
 
@@ -80,7 +75,7 @@ class script(object):
 ➪ Check Your Spelling Of Movie Check Correct Spelling <u>Google</u> Button Below Will Help You..
 <blockquote expandable>➪ If You Ask For A Movie Released In Theaters, You Will Not Get It, Movie Is Only Available When OTT & DVD Is Released. We Are Not Promote Theatre Prints, Leaked HD
 ➲ New OTT Files Channel Link Button Below 👇</blockquote>
-⚠️ Movie Is Not Available in My Database. You Report To Admin @KLAdmin1Bot 🙅‍♂ Don't Ask Theater Print 📵</b>"""
+⚠️ Movie Is Not Available in My Database. You Report To Admin @MlReportrobot 🙅‍♂ Don't Ask Theater Print 📵</b>"""
 
     NEW_USER_TXT = """<b>#New_User {}
 
@@ -108,11 +103,12 @@ User - {}"""
 🌟 runtime - {runtime}
 ❗️ ʟᴀɴɢᴜᴀɢᴇ - {languages}</b>"""
 
-    FILE_CAPTION = """<b>@Team_KL ~ {file_name}
-    
-➠ @KLxFiles 
-➠ @KLMovieGroup  
-➠ @KeralaRockers_Group</b>"""
+    FILE_CAPTION = """<code> <i>📂{file_name}</i> </code>
+
+<b>╔═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
+♻️ 𝙅𝙊𝙄𝙉 :- @FilmsProviderBot
+♻️ 𝙅𝙊𝙄𝙉 :- @TGFilmsProvider
+╚═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝</b>"""
 
     RESTART_TXT = """<b>
 📅 Dᴀᴛᴇ : <code>{}</code>
@@ -122,7 +118,7 @@ User - {}"""
     ALRT_TXT = """• This Is Not Your Movie Request.     
 • Don't Click Others Results 🥴."""
 
-    COMUNITY_TEXT = """<b>🎖<u>𝖪𝖾𝗋𝖺𝗅𝖺 𝖱𝗈𝖼𝗄𝖾𝗋𝗌 𝖢𝗈𝗆𝗆𝗎𝗇𝗂𝗍𝗒</u>🎖
+    COMUNITY_TEXT = """<b>🎖<u>@TGFilmsProvider</u>🎖
     
 ➠ 𝖰𝗎𝗂𝖼𝗄𝗅𝗒 𝖩𝗈𝗂𝗇 𝖮𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌 & 𝖢𝗁𝖺𝗇𝗇𝖾𝗅𝗌</b>"""
 
@@ -151,7 +147,8 @@ User - {}"""
 
 ◈ Your Request To Joined In ➤ <u>{title}</u> Successfully.
 
-◈ Thank You For Joiny ❤️ {mention}</b>"""
+◈ Thank You For Joiny ❤️ {mention}
+◈ <a href="https://t.me/addlist/IOm27HOynnQ5NmI8">🔞𝗔𝗱𝘂𝗹𝘁 𝗟𝗶𝗻𝗸𝘀🔞</a></b>"""
 
     DISCL_TXT = """<b>👨‍🏫 <u>𝗗𝗜𝗦𝗖𝗟𝗔𝗜𝗠𝗘𝗥 :</u>
     
@@ -173,7 +170,7 @@ User - {}"""
 » 𝖣𝗈𝗇'𝗍 𝖴𝗌𝖾 𝖲𝗒𝗆𝖻𝗈𝗅𝗌 𝖶𝗁𝗂𝗅𝖾 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖬𝗈𝗏𝗂𝖾𝗌 𝗅𝗂𝗄𝖾 (+:;'!-|...𝖾𝗍𝖼).
 
 <spoiler>𝖨𝖿 𝖸𝗈𝗎 𝖣𝗈𝗇'𝗍 𝖦𝖾𝗍 𝖬𝗈𝗏𝗂𝖾𝗌 𝖠𝗇𝖽 𝖲𝖾𝗋𝗂𝖾𝗌
-𝖢𝗈𝗇𝗍𝖺𝖼𝗍 𝖠𝖽𝗆𝗂𝗇 - @KLAdmin1Bot</spoiler>
+𝖢𝗈𝗇𝗍𝖺𝖼𝗍 𝖠𝖽𝗆𝗂𝗇 - @MlReportrobot</spoiler>
 
 <blockquote expandable>» <u>𝖬𝗈𝗏𝗂𝖾𝗌 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝗂𝗇𝗀 𝖥𝗈𝗋𝗆𝖺𝗍</u>
 𝖪𝗎𝗋𝗎𝗉 𝖬𝗈𝗏𝗂𝖾❌
@@ -190,10 +187,9 @@ User - {}"""
       
     MOVIES_UPDATE_TXT = """<b>#New_File_Added
 
-📻 Title: {title}
-🔊 Language: English
+📻 Title: #{title}
+
 🌟 Rating: {rating} / 10
 🎥 Quality: Proper HDRip
-
 <blockquote>🎭 Genres: {genres}</blockquote>
-<blockquote>{description}</blockquote></b>"""
+@TGFilmsProvider </b>"""
