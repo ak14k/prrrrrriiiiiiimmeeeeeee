@@ -46,13 +46,13 @@ async def pm_search(client, message):
     else:
         await message.reply_text("<b>I Am Not Working Here. Search Movies In Oru Movie Search Group. 👇</b>",
                                  reply_markup=InlineKeyboardMarkup([[
-		                     InlineKeyboardButton("📝 Movie Search Group 1️⃣ ", url=f'https://t.me/KLMovieGroup')
+		                     InlineKeyboardButton("📝 Movie Search Group 1️⃣ ", url=f'https://t.me/TGFilmsProviderp')
 				     ],[
-			             InlineKeyboardButton("📝 Movie Search Group 2️⃣", url=f"https://t.me/KLMovieGroupTG")
+			             InlineKeyboardButton("📝 Movie Search Group 2️⃣", url=f"https://t.me/TGFilmsProvider")
 			             ],[
-			             InlineKeyboardButton("📝 Movie Search Group 3️⃣", url=f"https://t.me/KeralaRockers_Group")
+			             InlineKeyboardButton("📝 Movie Search Group 3️⃣", url=f"https://t.me/TGFilmsProvider")
 			             ],[
-			             InlineKeyboardButton("📝 Movie Search Group 4️⃣", url=f"https://t.me/KL_Group2")					 
+			             InlineKeyboardButton("📝 Movie Search Group 4️⃣", url=f"https://t.me/TGFilmsProvider")					 
 				     ]]))
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
@@ -69,7 +69,7 @@ async def group_search(client, message):
                 files, n_offset, total = await get_search_results(message.text, offset=0)
                 if total != 0:
                     link = await db.get_set_grp_links(index=1)
-                    msg = await message.reply_text(script.SUPPORT_GRP_MOVIE_TEXT.format(message.from_user.mention(), total), reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ 😉' , url='https://t.me/JisshuMovieZone')]]))
+                    msg = await message.reply_text(script.SUPPORT_GRP_MOVIE_TEXT.format(message.from_user.mention(), total), reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ 😉' , url='https://t.me/TGFilmsProvider')]]))
                     await asyncio.sleep(300)
                     return await msg.delete()
                 else: return     
@@ -168,7 +168,7 @@ async def next_page(bot, query):
                 for file in files
 	      ]
     btn.insert(0,[
-        InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💢", url=f"https://t.me/+8jqKylneHvg1NzQ9")
+        InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💢", url=f"https://t.me/+KM0oSBCmYAoyMDZh")
         ])
     btn.insert(1,[
         InlineKeyboardButton("⇓ 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾", callback_data=f"languages#{key}#{offset}#{req}"),
@@ -236,7 +236,7 @@ async def seasons_cb_handler(client: Client, query: CallbackQuery):
             ),
         ])
     btn.insert(0,[
-        InlineKeyboardButton("↓Select Your Season 🤭↓", url=f"https://t.me/+8jqKylneHvg1NzQ9")
+        InlineKeyboardButton("↓Select Your Season 🤭↓", url=f"https://t.me/+KM0oSBCmYAoyMDZh")
         ])
     btn.append([InlineKeyboardButton(text="⇚ ʙᴀᴄᴋ ᴛᴏ ᴍᴀɪɴ ᴘᴀɢᴇ", callback_data=f"next_{req}_{key}_{offset}")])
     await query.edit_message_reply_markup( reply_markup=InlineKeyboardMarkup(btn))
@@ -294,7 +294,7 @@ async def season_search(client: Client, query: CallbackQuery):
                 for file in files
 	      ]
     btn.insert(0,[
-        InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💢", url=f"https://t.me/+8jqKylneHvg1NzQ9")
+        InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💢", url=f"https://t.me/+KM0oSBCmYAoyMDZh")
         ])
     btn.insert(1,[
 	InlineKeyboardButton("⇓ 𝖲𝖾𝗇𝖽 𝖠𝗅𝗅", callback_data=batch_link),
@@ -347,7 +347,7 @@ async def quality_cb_handler(client: Client, query: CallbackQuery):
             ),
         ])
     btn.insert(0,[
-        InlineKeyboardButton("↓Select Your File Quality 🥳↓", url=f"https://t.me/+8jqKylneHvg1NzQ9")
+        InlineKeyboardButton("↓Select Your File Quality 🥳↓", url=f"https://t.me/+KM0oSBCmYAoyMDZh")
         ])    
     btn.append([InlineKeyboardButton(text="⇚ ʙᴀᴄᴋ ᴛᴏ ᴍᴀɪɴ ᴘᴀɢᴇ", callback_data=f"next_{req}_{key}_{offset}")])
     await query.edit_message_reply_markup( reply_markup=InlineKeyboardMarkup(btn))
@@ -392,7 +392,7 @@ async def quality_search(client: Client, query: CallbackQuery):
                 for file in files
 	      ]  
     btn.insert(0,[
-        InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💢", url=f"https://t.me/+8jqKylneHvg1NzQ9")
+        InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💢", url=f"https://t.me/+KM0oSBCmYAoyMDZh")
         ])
     btn.insert(1,[
         InlineKeyboardButton("⇓ 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾", callback_data=f"languages#{key}#{offset}#{req}"),
@@ -441,7 +441,7 @@ async def languages_cb_handler(client: Client, query: CallbackQuery):
             ),
         ])
     btn.insert(0,[
-        InlineKeyboardButton("↓Select Your Languages 🥰↓", url=f"https://t.me/+8jqKylneHvg1NzQ9")
+        InlineKeyboardButton("↓Select Your Languages 🥰↓", url=f"https://t.me/+KM0oSBCmYAoyMDZh")
         ])    
     btn.append([InlineKeyboardButton(text="⇚ ʙᴀᴄᴋ ᴛᴏ ᴍᴀɪɴ ᴘᴀɢᴇ", callback_data=f"next_{req}_{key}_{offset}")])
     await query.edit_message_reply_markup( reply_markup=InlineKeyboardMarkup(btn))
@@ -494,7 +494,7 @@ async def lang_search(client: Client, query: CallbackQuery):
                 for file in files
 	      ]        
     btn.insert(0,[
-        InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💢", url=f"https://t.me/+8jqKylneHvg1NzQ9")
+        InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💢", url=f"https://t.me/+KM0oSBCmYAoyMDZh")
     ])
     if n_offset== '':
         btn.append(
@@ -666,13 +666,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "owner_info":
         buttons = [[
             InlineKeyboardButton('⇚ ʙᴀᴄᴋ​', callback_data='start'),    
-            InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ʟᴏɢᴏ ᴘʀᴏ', url='https://t.me/PremiumLogoPro')
+            InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ', url='https://t.me/+KM0oSBCmYAoyMDZh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
-            InputMediaPhoto("https://telegra.ph/file/d12cbba3daed5330005aa.jpg")
+            InputMediaPhoto("https://telegra.ph/file/b3803a406afff8a671b13.jpg")
         )
         await query.message.edit_text(
             text=script.OWNER_INFO,
@@ -681,16 +681,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
 	)
     elif query.data == "comunity_link":
         buttons = [[
-            InlineKeyboardButton('👥 Request Group #1', url='https://t.me/KLMovieGroup'),    
-            InlineKeyboardButton('👥 Request Group #2', url='https://t.me/KeralaRockers_Group')
+            InlineKeyboardButton('👥 Request Group #1', url='https://t.me/+KM0oSBCmYAoyMDZh'),    
+            InlineKeyboardButton('👥 Request Group #2', url='https://t.me/+KM0oSBCmYAoyMDZh')
 	],[ 
-	    InlineKeyboardButton('👥 Request Group #3', url='https://t.me/KLMovieGroupTG'),    
-            InlineKeyboardButton('👥 Request Group #4', url='https://t.me/KL_Group2')
+	    InlineKeyboardButton('👥 Request Group #3', url='https://t.me/+KM0oSBCmYAoyMDZh'),    
+            InlineKeyboardButton('👥 Request Group #4', url='https://t.me/+KM0oSBCmYAoyMDZh')
 	],[
-	    InlineKeyboardButton('🎗️[New Group] Opening soon🎗️', url='https://t.me/+PqryZGuwC3w4NTA1'),    
+	    InlineKeyboardButton('🎗️[New Group] Opening soon🎗️', url='https://t.me/+KM0oSBCmYAoyMDZh'),    
 	],[
-            InlineKeyboardButton('🎥 OTT Files #1', url='https://t.me/KLxFiles'),    
-            InlineKeyboardButton('🎬 OTT Files #2', url='https://t.me/+RT65irsepVkyOWI1')
+            InlineKeyboardButton('🎥 OTT Files #1', url='https://t.me/+KM0oSBCmYAoyMDZh'),    
+            InlineKeyboardButton('🎬 OTT Files #2', url='https://t.me/+KM0oSBCmYAoyMDZh')
 	],[    
             InlineKeyboardButton('⇚ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ᴘᴀɢᴇ 📄', callback_data='start')
         ]]
@@ -729,7 +729,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "discl":
         buttons = [[
             InlineKeyboardButton('⇚ ʙᴀᴄᴋ', callback_data='about'),
-            InlineKeyboardButton('👨🏻‍💻 ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ', url='https://t.me/KLAdmin1Bot')
+            InlineKeyboardButton('👨🏻‍💻 ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ', url='https://t.me/TGFilmsProvider')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
